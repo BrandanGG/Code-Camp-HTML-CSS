@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="width=divice-width, initial-scale=1.0">
+        <title>Build a Survey Project</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">Tech Survey</h1>
+        <p id="description">Short Survey to assess your level of technical understanding</p>
+        <form id="survey-form">
+            <fieldset id="info">
+                <label 
+                for="name" 
+                id="name-label">
+                Enter Your Name:
+                    <input 
+                    id="name" 
+                    type="text" 
+                    placeholder="Brandan Grossi" 
+                    required>
+                </label>
+                <label 
+                for="email" 
+                id="email-label">
+                Enter a Valid Email Address:
+                    <input 
+                    id="email" 
+                    type="email" 
+                    placeholder="brandan.grossi1@gmail.com" 
+                    required>
+                </label>
+                <label 
+                for="number" 
+                id="number-label">
+                Enter Your Age
+                    <input 
+                    id="number" 
+                    type="number" 
+                    placeholder="20" 
+                    pattern="[0-9]" 
+                    min="5" 
+                    max="120" 
+                    required>
+                </label>
+            </fieldset>      
+            <fieldset>
+                <label for="dropdown" id="dropdown-label"> 
+                    Which option best describes your education?
+                    <select id="dropdown">
+                        <option value=""> 
+                            Select Education Level
+                        </option>
+                        <option value="1"> 
+                            Self Taught
+                        </option>
+                        <option value="2">
+                            Under Grad
+                        </option>
+                        <option value="3"> 
+                            Masters
+                        </option>
+                        <option value="4"> 
+                            PhD
+                        </option>
+                        <option value="5"> 
+                            Just Starting
+                        </option>
+                    </select>
+                </label>
+                <label 
+                id="tech-employee">
+                Are you currently employed in the tech industry?
+                </label>
+                <label 
+                for="yes-employee">
+                    <input id="yes-employee" 
+                    type="radio" 
+                    name="employed"
+                    value="yes" 
+                    class="inline"/> 
+                    Yes
+                </label>
+                <label 
+                for="no-employee">
+                    <input id="no-employee" 
+                    type="radio" 
+                    name="employed" 
+                    value="no"
+                    class="inline"> 
+                    No
+                </label>
+                <label 
+                id="lang-list" 
+                for="langs">
+                What coding language do you know?
+                </label>
+                    <label>
+                        <input 
+                        name="langs" 
+                        type="checkbox" 
+                        value="Python"
+                        class="cb-input"> Python
+                        <input 
+                        name="langs" 
+                        type="checkbox" 
+                        value="Java"
+                        class="cb-input"> Java
+                    </label>
+                    <label>
+                        <input 
+                        name="langs" 
+                        type="checkbox" 
+                        value="C++"
+                        class="cb-input"> C++
+                        <input 
+                        name="langs" 
+                        type="checkbox" 
+                        value="C"
+                        class="cb-input"> C
+                    </label>
+                    <label>
+                        <input 
+                        name="langs" 
+                        type="checkbox" 
+                        value="C#"
+                        class="cb-input"> C#
+                        <input 
+                        name="langs" 
+                        type="checkbox" 
+                        value="Java Script"
+                        class="cb-input"> Java Script
+                    </label>
+                    <label>
+                        <input 
+                        name="langs" 
+                        type="checkbox" 
+                        value="HTML"
+                        class="cb-input"> HTML
+                        <input 
+                        name="langs" 
+                        type="checkbox" 
+                        value="Ruby"
+                        class="cb-input"> Ruby
+                    </label>
+                    <label>
+                        <input 
+                        name="langs" 
+                        type="checkbox" 
+                        value="PHP"
+                        class="cb-input"> PHP
+                        <input 
+                        name="langs" 
+                        type="checkbox" 
+                        value="R"
+                        class="cb-input"> R
+                    </label>
+                    <label>
+                        <input 
+                        name="langs" 
+                        type="checkbox" 
+                        value="SQL"
+                        class="cb-input"> R
+                        <input 
+                        name="langs" 
+                        type="checkbox" 
+                        value="Other"
+                        class="cb-input"> Other
+                    </label>
+                <label 
+                id="project-label"
+                for="projects">
+                    Tell us about your most recent project!
+                    <textarea
+                        id="projects"
+                        name="projects"
+                        placeholder="My most recent project was..."
+                        cols="50"
+                        rows="5"
+                        required>
+                    </textarea>
+                </label>
+                <label
+                id="tac-label"
+                for="tac">
+                    <input
+                    id="tac"
+                    type="checkbox"
+                    name="tac"
+                    value="1"
+                    required
+                    />
+                    I accept the <a href="https://www.google.com">terms and conditions</a>
+                </label>
+                <input
+                type="submit"
+                class="inline"
+                id="submit"
+                name="submit"
+                />
+            </fieldset>
+        </form>
+    </body>
+</html>

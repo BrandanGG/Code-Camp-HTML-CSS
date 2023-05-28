@@ -1,0 +1,18 @@
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  align-items: center;
+}
+
+#tribute-link {
+  target: _blank;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+h1 {
+  text-align: center;
+}

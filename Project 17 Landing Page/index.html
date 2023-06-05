@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Project 17 - landing Page</title>
+    </head>
+    <body>
+        <main>
+            <header id="header">
+                <nav id="nav-bar">
+                    <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png">
+                    <ul class="nav-links">
+                        <li><a class="nav-links" href="#features">Features</a></li>
+                        <li><a class="nav-links" href="#how-it-works">How it Works</a></li>
+                        <li><a class="nav-links" href="#pricing">Pricing</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="form-stuff">
+                <div id="form-container">
+                    <h3 id="form-title" class="bold center">Handcrafted, home-made masterpieces</h3>
+                    <form action="https://www.freecodecamp.com/email-submit" method="post">
+                        <label class="sr-only" for="email">Enter your email</label>
+                        <input class="center" id="email" type="email" required placeholder="your-email@here.com">
+                        <input class="bold center" id="submit" type="submit" value="Get Started!">
+                    </form>
+                </div>
+            </section>
+            <section id="features">
+                <div id="feat-container">
+                    <div id="premium">
+                        <i id="icon" class="fa-solid fa-bolt fa-beat"></i>
+                        <h2 class="bold description">Premium Materials</h2>
+                        <p class="description">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                    </div>
+                    <div id="fast">
+                        <i id="icon" class="fa-solid fa-truck fa-beat"></i>
+                        <h2 class="bold description">Fast Shipping</h2>
+                        <p class="description">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                    </div>
+                    <div id="quality">
+                        <i id="icon" class="fa-solid fa-circle-exclamation fa-beat"></i>
+                        <h2 class="bold description">Quality Assurance</h2>
+                        <p class="description">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                    </div> 
+                </div>
+            </section>
+            <section id="how-it-works">
+                <div class="iframe-container">
+                    <iframe
+                        id="video"
+                        height="315"
+                        src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+                        frameborder="0"
+                        allowfullscreen
+                    ></iframe>
+                 </div>
+            </section>
+            <section id="pricing">
+                <div class="pricing-container">
+                    <div class="top-pricing">
+                        <h4>Tenor Trombone</h4>
+                    </div>
+                    <div class="body">
+                        <h2>600$</h2>
+                        <p>Lorem ipsum.</p>
+                        <button>SELECT</button>
+                    </div>
+                </div>
+                <div class="pricing-container">
+                    <div class="top-pricing">
+                        <h4>Bass Trombone</h4>
+                    </div>
+                    <div class="body">
+                        <h2>900$</h2>
+                        <p>Lorem ipsum.</p>
+                        <button>SELECT</button>
+                    </div>
+                </div>
+                <div class="pricing-container">
+                    <div class="top-pricing">
+                        <h4>Valve Trombone</h4>
+                    </div>
+                    <div class="body">
+                        <h2>1200$</h2>
+                        <p>Lorem ipsum.</p>
+                        <button>SELECT</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

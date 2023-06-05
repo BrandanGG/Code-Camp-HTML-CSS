@@ -1,0 +1,192 @@
+/*Start styling the nav bar and making sure it stays at the top. Img in the left corner and links in the top right.*/
+html {
+    box-sizing: border-box;
+  }
+  
+*, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+
+body {
+    background-color: #bdb8aa;
+    margin: 0;
+    padding: 0;
+}
+#header {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    height: 75px;
+    z-index: 100;
+    background-color: #87888a;
+}
+#nav-bar {
+    width: 100%;
+    height: 75px;
+    display: flex; 
+    background-color: #87888a;  
+}
+
+#header-img {
+    align-items: center;
+    width: 500px;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: auto 0;
+}
+
+nav ul li {
+    color: black;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    color: inherit;
+    display: block;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links:hover {
+    color: lightblue;
+    font-size: 1.6rem;
+}
+
+.sr-only {
+    display: none;
+}
+
+#form-container {
+    position: relative;
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    margin: 50px auto;
+    flex-direction: column;
+    text-align: center;
+}
+
+#email {
+    display:flex;
+    align-items: center;
+    margin: auto auto 10px auto;
+    height: 2rem;
+    width: 75%;
+    
+}
+
+#submit {
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: gold;
+    border: none;
+}
+
+h3 { 
+    font-size: 1.3rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+#feat-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    align-items: center;
+    flex-direction: column;
+}
+
+#premium, #fast, #quality {
+    width: 70%;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 5fr
+}
+
+.description {
+    grid-column: 2;
+    
+}
+
+p.description {
+    margin-top: auto;
+}
+
+#icon {
+    grid-column: 1;
+    font-size: 50px;
+    color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto auto auto;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+}
+  
+.iframe-container iframe {
+    aspect-ratio: 4/3;
+}
+
+#pricing {
+    width: 70%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    align-items: center;
+    margin: auto;
+}
+
+.pricing-container {
+    display:flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    margin: 25px;
+}
+
+.top-pricing {
+    flex-grow: 1;
+    border-bottom: 1px solid black;
+    text-align: center;
+    background: #87888a;
+}
+
+.body {
+    text-align: center;
+    height: 100%;
+    background: #bdb8aa;
+}
+
+.body p {
+    font-size: 1.2rem;
+}
+
+.body button {
+    margin-top: 50px;
+    height: 30px;
+    width: 75%;
+    background-color: gold;
+    border: none
+}
